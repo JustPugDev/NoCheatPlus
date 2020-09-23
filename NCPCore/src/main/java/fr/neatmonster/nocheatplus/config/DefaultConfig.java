@@ -94,8 +94,9 @@ public class DefaultConfig extends ConfigFile {
                 "nocheatplus.checks.chat.relog :: INTERVAL:10",
                 "nocheatplus.checks.chat.logins :: INTERVAL:10",
                 "nocheatplus.checks.chat.* :: INTERVAL:4",
-                "nocheatplus.checks.net.* :: INTERVAL:4",
-                "nocheatplus.checks.moving.survivalfly.* :: INTERVAL:10" // (Excludes the sf base permission.)
+                "nocheatplus.checks.net.* :: INTERVAL:5",
+                "nocheatplus.checks.moving* :: INTERVAL:5", // (Excludes the sf base permission.)
+                "nocheatplus.checks.inventory.moreinventory :: INTERVAL:5"
                 ), 1154);
 
 
@@ -386,6 +387,7 @@ public class DefaultConfig extends ConfigFile {
         set(ConfPaths.FIGHT_REACH_SURVIVALDISTANCE, 4.22, 1154); // 4.4 
         set(ConfPaths.FIGHT_REACH_PENALTY, 250, 1154);
         set(ConfPaths.FIGHT_REACH_REDUCE, true, 785);
+        set(ConfPaths.FIGHT_REACH_PRECISION, true, 1154);
         set(ConfPaths.FIGHT_REACH_REDUCEDISTANCE, 0.9, 785);
         set(ConfPaths.FIGHT_REACH_REDUCESTEP, 0.15, 785);
         set(ConfPaths.FIGHT_REACH_IMPROBABLE_FEEDONLY, false, 1154);
